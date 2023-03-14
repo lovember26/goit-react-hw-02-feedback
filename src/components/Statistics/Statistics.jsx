@@ -1,4 +1,5 @@
 import { Span } from './Statistics.styled';
+import { Paragraph } from './Statistics.styled';
 
 export default function Statistics({
   good,
@@ -9,21 +10,21 @@ export default function Statistics({
 }) {
   return (
     <>
-      <p>
+      <Paragraph>
         Good: <Span>{good}</Span>
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Neutral: <Span>{neutral}</Span>
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Bad: <Span>{bad}</Span>
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Total: <Span>{total}</Span>
-      </p>
-      <p>
+      </Paragraph>
+      <Paragraph>
         Positive feedback: <Span>{positivePercentage}%</Span>
-      </p>
+      </Paragraph>
     </>
   );
 }
