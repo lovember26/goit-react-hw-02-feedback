@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-
+import { Paragraph } from 'components/Statistics/Statistics.styled';
 export default function Notification({ message }) {
-  return <p>{message}</p>;
+  return <Paragraph>{message}</Paragraph>;
 }
 
 Notification.propTypes = {
